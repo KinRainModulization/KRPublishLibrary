@@ -27,9 +27,9 @@ LXSingleton_m(NetworkTool)
     if (params) {
         [outputParams addEntriesFromDictionary:params];
     }
-//    if ([PublicTools getUserInfo]) {
-//        [outputParams addEntriesFromDictionary:[PublicTools getUserInfo]];
-//    }
+    if ([PublicTools getUserInfo]) {
+        [outputParams addEntriesFromDictionary:[PublicTools getUserInfo]];
+    }
     NSMutableDictionary *paramsToSign = [NSMutableDictionary dictionaryWithDictionary:outputParams];
     [paramsToSign setObject:SIGN_KEY forKey:@"app_key"];
     
@@ -73,18 +73,6 @@ LXSingleton_m(NetworkTool)
 + (void)networkStateChange {
     AFNetworkReachabilityManager *networkManager = [AFNetworkReachabilityManager sharedManager];
     [networkManager startMonitoring];
-    [networkManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-        BOOL networkStatus;
-        if(status == AFNetworkReachabilityStatusReachableViaWWAN || status == AFNetworkReachabilityStatusReachableViaWiFi) {
-            networkStatus = YES;
-        }
-        else {
-            networkStatus = NO;
-        }
-        [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationNetworkStateChange
-                                                            object:nil
-                                                          userInfo:@{@"networkStatus":@(networkStatus)}];
-    }];
 }
 
 #pragma mark - Setter/Getter

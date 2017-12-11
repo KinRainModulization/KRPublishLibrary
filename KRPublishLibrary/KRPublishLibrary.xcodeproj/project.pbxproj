@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1615A2E01FDE36EF00AC5780 /* LXNetworkErrorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1615A2DD1FDE36EF00AC5780 /* LXNetworkErrorView.m */; };
+		1615A2E11FDE36EF00AC5780 /* LXNetworkSolutionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1615A2DF1FDE36EF00AC5780 /* LXNetworkSolutionController.m */; };
 		50B3D5B51FDA292800945420 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B3D5B41FDA292800945420 /* AppDelegate.m */; };
 		50B3D5B81FDA292800945420 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B3D5B71FDA292800945420 /* ViewController.m */; };
 		50B3D5BB1FDA292800945420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B3D5B91FDA292800945420 /* Main.storyboard */; };
@@ -24,9 +26,6 @@
 		50B3D6161FDA31A200945420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B3D6151FDA31A100945420 /* Assets.xcassets */; };
 		50B3D62C1FDA35FA00945420 /* LXAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B3D61F1FDA35FA00945420 /* LXAlertView.m */; };
 		50B3D62D1FDA35FA00945420 /* LXEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B3D6221FDA35FA00945420 /* LXEmptyView.m */; };
-		50B3D62E1FDA35FA00945420 /* LXNetworkSolutionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B3D6271FDA35FA00945420 /* LXNetworkSolutionController.m */; };
-		50B3D62F1FDA35FA00945420 /* LXNetworkErrorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B3D6281FDA35FA00945420 /* LXNetworkErrorView.m */; };
-		50B3D6301FDA35FA00945420 /* LXNetworkErrorHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B3D6291FDA35FA00945420 /* LXNetworkErrorHeadView.m */; };
 		50B3D6A31FDA373D00945420 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B3D6361FDA373D00945420 /* MJPropertyType.m */; };
 		50B3D6A41FDA373D00945420 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B3D6391FDA373D00945420 /* NSObject+MJKeyValue.m */; };
 		50B3D6A51FDA373D00945420 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B3D63A1FDA373D00945420 /* MJProperty.m */; };
@@ -96,6 +95,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1615A2DC1FDE36EF00AC5780 /* LXNetworkErrorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXNetworkErrorView.h; sourceTree = "<group>"; };
+		1615A2DD1FDE36EF00AC5780 /* LXNetworkErrorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXNetworkErrorView.m; sourceTree = "<group>"; };
+		1615A2DE1FDE36EF00AC5780 /* LXNetworkSolutionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXNetworkSolutionController.h; sourceTree = "<group>"; };
+		1615A2DF1FDE36EF00AC5780 /* LXNetworkSolutionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXNetworkSolutionController.m; sourceTree = "<group>"; };
 		50B3D5B01FDA292800945420 /* KRPublishLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KRPublishLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B3D5B31FDA292800945420 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		50B3D5B41FDA292800945420 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -134,12 +137,6 @@
 		50B3D6201FDA35FA00945420 /* LXAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXAlertView.h; sourceTree = "<group>"; };
 		50B3D6221FDA35FA00945420 /* LXEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXEmptyView.m; sourceTree = "<group>"; };
 		50B3D6231FDA35FA00945420 /* LXEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXEmptyView.h; sourceTree = "<group>"; };
-		50B3D6251FDA35FA00945420 /* LXNetworkErrorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXNetworkErrorView.h; sourceTree = "<group>"; };
-		50B3D6261FDA35FA00945420 /* LXNetworkErrorHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXNetworkErrorHeadView.h; sourceTree = "<group>"; };
-		50B3D6271FDA35FA00945420 /* LXNetworkSolutionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXNetworkSolutionController.m; sourceTree = "<group>"; };
-		50B3D6281FDA35FA00945420 /* LXNetworkErrorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXNetworkErrorView.m; sourceTree = "<group>"; };
-		50B3D6291FDA35FA00945420 /* LXNetworkErrorHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXNetworkErrorHeadView.m; sourceTree = "<group>"; };
-		50B3D62A1FDA35FA00945420 /* LXNetworkSolutionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXNetworkSolutionController.h; sourceTree = "<group>"; };
 		50B3D6331FDA373D00945420 /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
 		50B3D6341FDA373D00945420 /* NSObject+MJClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJClass.h"; sourceTree = "<group>"; };
 		50B3D6351FDA373D00945420 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
@@ -272,6 +269,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1615A2DB1FDE36EF00AC5780 /* NetworkError */ = {
+			isa = PBXGroup;
+			children = (
+				1615A2DC1FDE36EF00AC5780 /* LXNetworkErrorView.h */,
+				1615A2DD1FDE36EF00AC5780 /* LXNetworkErrorView.m */,
+				1615A2DE1FDE36EF00AC5780 /* LXNetworkSolutionController.h */,
+				1615A2DF1FDE36EF00AC5780 /* LXNetworkSolutionController.m */,
+			);
+			path = NetworkError;
+			sourceTree = "<group>";
+		};
 		50B3D5A71FDA292800945420 = {
 			isa = PBXGroup;
 			children = (
@@ -407,11 +415,11 @@
 		50B3D6191FDA348F00945420 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1615A2DB1FDE36EF00AC5780 /* NetworkError */,
 				50B3D61A1FDA35FA00945420 /* Cells */,
 				50B3D6D81FDA6DA600945420 /* Hud */,
 				50B3D61E1FDA35FA00945420 /* Alert */,
 				50B3D6211FDA35FA00945420 /* Empty */,
-				50B3D6241FDA35FA00945420 /* NetworkError */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -439,19 +447,6 @@
 				50B3D6231FDA35FA00945420 /* LXEmptyView.h */,
 			);
 			path = Empty;
-			sourceTree = "<group>";
-		};
-		50B3D6241FDA35FA00945420 /* NetworkError */ = {
-			isa = PBXGroup;
-			children = (
-				50B3D6251FDA35FA00945420 /* LXNetworkErrorView.h */,
-				50B3D6261FDA35FA00945420 /* LXNetworkErrorHeadView.h */,
-				50B3D6271FDA35FA00945420 /* LXNetworkSolutionController.m */,
-				50B3D6281FDA35FA00945420 /* LXNetworkErrorView.m */,
-				50B3D6291FDA35FA00945420 /* LXNetworkErrorHeadView.m */,
-				50B3D62A1FDA35FA00945420 /* LXNetworkSolutionController.h */,
-			);
-			path = NetworkError;
 			sourceTree = "<group>";
 		};
 		50B3D6311FDA373D00945420 /* Library */ = {
@@ -815,13 +810,12 @@
 				50B3D6BF1FDA373D00945420 /* MJRefreshAutoFooter.m in Sources */,
 				50B3D6B51FDA373D00945420 /* MJRefreshBackNormalFooter.m in Sources */,
 				50B3D6C31FDA373D00945420 /* MASCompositeConstraint.m in Sources */,
-				50B3D62E1FDA35FA00945420 /* LXNetworkSolutionController.m in Sources */,
 				50B3D6B81FDA373D00945420 /* MJRefreshAutoNormalFooter.m in Sources */,
 				50B3D6C81FDA373D00945420 /* MASConstraint.m in Sources */,
 				50B3D6C91FDA373D00945420 /* MASViewConstraint.m in Sources */,
 				50B3D6D11FDA373D00945420 /* AFSecurityPolicy.m in Sources */,
-				50B3D62F1FDA35FA00945420 /* LXNetworkErrorView.m in Sources */,
 				50B3D6C61FDA373D00945420 /* NSArray+MASAdditions.m in Sources */,
+				1615A2E11FDE36EF00AC5780 /* LXNetworkSolutionController.m in Sources */,
 				50B3D62D1FDA35FA00945420 /* LXEmptyView.m in Sources */,
 				50B3D6BC1FDA373D00945420 /* MJRefreshFooter.m in Sources */,
 				50B3D6D61FDA6C2100945420 /* NetworkTool.m in Sources */,
@@ -835,10 +829,10 @@
 				50B3D6AD1FDA373D00945420 /* UIScrollView+MJRefresh.m in Sources */,
 				50B3D6BD1FDA373D00945420 /* MJRefreshHeader.m in Sources */,
 				50B3D6A41FDA373D00945420 /* NSObject+MJKeyValue.m in Sources */,
-				50B3D6301FDA35FA00945420 /* LXNetworkErrorHeadView.m in Sources */,
 				50B3D6C51FDA373D00945420 /* MASLayoutConstraint.m in Sources */,
 				50B3D60B1FDA2F4F00945420 /* NSObject+Log.m in Sources */,
 				50B3D6A31FDA373D00945420 /* MJPropertyType.m in Sources */,
+				1615A2E01FDE36EF00AC5780 /* LXNetworkErrorView.m in Sources */,
 				50B3D6B91FDA373D00945420 /* MJRefreshNormalHeader.m in Sources */,
 				50B3D5ED1FDA2EE100945420 /* BaseViewController.m in Sources */,
 				50B3D6B61FDA373D00945420 /* MJRefreshAutoStateFooter.m in Sources */,

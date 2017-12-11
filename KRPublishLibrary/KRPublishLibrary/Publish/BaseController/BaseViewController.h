@@ -10,8 +10,6 @@
 
 @interface BaseViewController : UIViewController
 
-//不可下拉刷新的视图显示加载按钮
-@property (nonatomic, assign) BOOL showReloadBtn;
-
 @property (nonatomic, assign) BOOL hiddenNetworkErrorView;
+
 @end

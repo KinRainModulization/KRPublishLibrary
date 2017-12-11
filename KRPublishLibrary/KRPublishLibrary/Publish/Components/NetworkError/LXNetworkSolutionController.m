@@ -7,6 +7,8 @@
 //
 
 #import "LXNetworkSolutionController.h"
+#import "Macros.h"
+#import "UIView+Extension.h"
 
 @interface LXNetworkSolutionController ()
 

@@ -99,6 +99,7 @@
 		1615A2DD1FDE36EF00AC5780 /* LXNetworkErrorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXNetworkErrorView.m; sourceTree = "<group>"; };
 		1615A2DE1FDE36EF00AC5780 /* LXNetworkSolutionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXNetworkSolutionController.h; sourceTree = "<group>"; };
 		1615A2DF1FDE36EF00AC5780 /* LXNetworkSolutionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXNetworkSolutionController.m; sourceTree = "<group>"; };
+		1615A2E31FDE61EE00AC5780 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		50B3D5B01FDA292800945420 /* KRPublishLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KRPublishLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B3D5B31FDA292800945420 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		50B3D5B41FDA292800945420 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -132,7 +133,6 @@
 		50B3D6111FDA2FB200945420 /* APIStringMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIStringMacros.h; sourceTree = "<group>"; };
 		50B3D6121FDA2FB200945420 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		50B3D6151FDA31A100945420 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		50B3D6181FDA32A900945420 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		50B3D61F1FDA35FA00945420 /* LXAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXAlertView.m; sourceTree = "<group>"; };
 		50B3D6201FDA35FA00945420 /* LXAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXAlertView.h; sourceTree = "<group>"; };
 		50B3D6221FDA35FA00945420 /* LXEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXEmptyView.m; sourceTree = "<group>"; };
@@ -364,15 +364,15 @@
 			isa = PBXGroup;
 			children = (
 				50B3D6001FDA2F4F00945420 /* NSString+Extension.h */,
+				50B3D6061FDA2F4F00945420 /* NSString+Extension.m */,
+				50B3D6051FDA2F4F00945420 /* UILabel+Extension.h */,
 				50B3D6011FDA2F4F00945420 /* UILabel+Extension.m */,
 				50B3D6021FDA2F4F00945420 /* UIView+Extension.h */,
-				50B3D6031FDA2F4F00945420 /* UIButton+Extension.h */,
-				50B3D6041FDA2F4F00945420 /* NSObject+Log.m */,
-				50B3D6051FDA2F4F00945420 /* UILabel+Extension.h */,
-				50B3D6061FDA2F4F00945420 /* NSString+Extension.m */,
-				50B3D6071FDA2F4F00945420 /* UIButton+Extension.m */,
 				50B3D6081FDA2F4F00945420 /* UIView+Extension.m */,
+				50B3D6031FDA2F4F00945420 /* UIButton+Extension.h */,
+				50B3D6071FDA2F4F00945420 /* UIButton+Extension.m */,
 				50B3D6091FDA2F4F00945420 /* NSObject+Log.h */,
+				50B3D6041FDA2F4F00945420 /* NSObject+Log.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -406,7 +406,7 @@
 		50B3D6171FDA32A900945420 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				50B3D6181FDA32A900945420 /* PrefixHeader.pch */,
+				1615A2E31FDE61EE00AC5780 /* PrefixHeader.pch */,
 				50B3D6D71FDA6D0A00945420 /* LXSingleton.h */,
 			);
 			path = Other;
@@ -416,19 +416,10 @@
 			isa = PBXGroup;
 			children = (
 				1615A2DB1FDE36EF00AC5780 /* NetworkError */,
-				50B3D61A1FDA35FA00945420 /* Cells */,
-				50B3D6D81FDA6DA600945420 /* Hud */,
 				50B3D61E1FDA35FA00945420 /* Alert */,
 				50B3D6211FDA35FA00945420 /* Empty */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		50B3D61A1FDA35FA00945420 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 		50B3D61E1FDA35FA00945420 /* Alert */ = {
@@ -653,13 +644,6 @@
 				50B3D6D41FDA6C2100945420 /* NetworkTool.m */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		50B3D6D81FDA6DA600945420 /* Hud */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Hud;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1022,8 +1006,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8TVSF6Q9MU;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Publish/Other/PrefixHeader.pch/";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = KRPublishLibrary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kinrain.user;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1037,8 +1022,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8TVSF6Q9MU;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Publish/Other/PrefixHeader.pch/";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = KRPublishLibrary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kinrain.user;
 				PRODUCT_NAME = "$(TARGET_NAME)";

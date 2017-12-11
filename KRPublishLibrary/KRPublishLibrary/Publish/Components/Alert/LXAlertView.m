@@ -7,6 +7,9 @@
 //
 
 #import "LXAlertView.h"
+#import "Masonry.h"
+#import "Macros.h"
+#import "UILabel+Extension.h"
 
 const static CGFloat kAlertViewDefaultWidth          = 280; // 弹框宽度
 const static CGFloat kAlertViewDefaultButtonHeight   = 50;  // 按钮高度

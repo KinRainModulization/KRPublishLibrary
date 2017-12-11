@@ -9,6 +9,7 @@
 #import "NetworkTool.h"
 #import "AFNetworking.h"
 #import "NSString+Extension.h"
+#import "Macros.h"
 
 #define STATE_SUCCESS 1
 #define STATE_FAILURE 0
@@ -27,9 +28,9 @@ LXSingleton_m(NetworkTool)
     if (params) {
         [outputParams addEntriesFromDictionary:params];
     }
-    if ([PublicTools getUserInfo]) {
-        [outputParams addEntriesFromDictionary:[PublicTools getUserInfo]];
-    }
+//    if ([PublicTools getUserInfo]) {
+//        [outputParams addEntriesFromDictionary:[PublicTools getUserInfo]];
+//    }
     NSMutableDictionary *paramsToSign = [NSMutableDictionary dictionaryWithDictionary:outputParams];
     [paramsToSign setObject:SIGN_KEY forKey:@"app_key"];
     

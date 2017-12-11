@@ -9,6 +9,8 @@
 #import "BaseViewController.h"
 #import "LXNetworkSolutionController.h"
 #import "LXNetworkErrorView.h"
+#import "Macros.h"
+#import "NetworkTool.h"
 
 @interface BaseViewController ()
 

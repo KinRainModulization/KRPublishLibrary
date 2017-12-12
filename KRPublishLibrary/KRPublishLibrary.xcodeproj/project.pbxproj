@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1615A2E01FDE36EF00AC5780 /* LXNetworkErrorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1615A2DD1FDE36EF00AC5780 /* LXNetworkErrorView.m */; };
 		1615A2E11FDE36EF00AC5780 /* LXNetworkSolutionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1615A2DF1FDE36EF00AC5780 /* LXNetworkSolutionController.m */; };
+		1615A4A61FDF6D2F00AC5780 /* LXProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1615A4A51FDF6D2F00AC5780 /* LXProgressHUD.m */; };
+		1615A4C11FDF7C9D00AC5780 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1615A4C01FDF7C9D00AC5780 /* Reachability.m */; };
+		1615A4CD1FDF7FEB00AC5780 /* PublicTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1615A4CC1FDF7FEB00AC5780 /* PublicTools.m */; };
 		50B3D5B51FDA292800945420 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B3D5B41FDA292800945420 /* AppDelegate.m */; };
 		50B3D5B81FDA292800945420 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B3D5B71FDA292800945420 /* ViewController.m */; };
 		50B3D5BB1FDA292800945420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B3D5B91FDA292800945420 /* Main.storyboard */; };
@@ -23,7 +26,6 @@
 		50B3D60C1FDA2F4F00945420 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B3D6061FDA2F4F00945420 /* NSString+Extension.m */; };
 		50B3D60D1FDA2F4F00945420 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B3D6071FDA2F4F00945420 /* UIButton+Extension.m */; };
 		50B3D60E1FDA2F4F00945420 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B3D6081FDA2F4F00945420 /* UIView+Extension.m */; };
-		50B3D6161FDA31A200945420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B3D6151FDA31A100945420 /* Assets.xcassets */; };
 		50B3D62C1FDA35FA00945420 /* LXAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B3D61F1FDA35FA00945420 /* LXAlertView.m */; };
 		50B3D62D1FDA35FA00945420 /* LXEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B3D6221FDA35FA00945420 /* LXEmptyView.m */; };
 		50B3D6C11FDA373D00945420 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B3D6791FDA373D00945420 /* NSLayoutConstraint+MASDebugAdditions.m */; };
@@ -70,6 +72,12 @@
 		1615A2DE1FDE36EF00AC5780 /* LXNetworkSolutionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXNetworkSolutionController.h; sourceTree = "<group>"; };
 		1615A2DF1FDE36EF00AC5780 /* LXNetworkSolutionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXNetworkSolutionController.m; sourceTree = "<group>"; };
 		1615A2E31FDE61EE00AC5780 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		1615A4A41FDF6D2F00AC5780 /* LXProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXProgressHUD.h; sourceTree = "<group>"; };
+		1615A4A51FDF6D2F00AC5780 /* LXProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXProgressHUD.m; sourceTree = "<group>"; };
+		1615A4BF1FDF7C9D00AC5780 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		1615A4C01FDF7C9D00AC5780 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		1615A4CB1FDF7FEB00AC5780 /* PublicTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicTools.h; sourceTree = "<group>"; };
+		1615A4CC1FDF7FEB00AC5780 /* PublicTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicTools.m; sourceTree = "<group>"; };
 		50B3D5B01FDA292800945420 /* KRPublishLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KRPublishLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B3D5B31FDA292800945420 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		50B3D5B41FDA292800945420 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -102,7 +110,6 @@
 		50B3D6101FDA2FB200945420 /* UtilsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
 		50B3D6111FDA2FB200945420 /* APIStringMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIStringMacros.h; sourceTree = "<group>"; };
 		50B3D6121FDA2FB200945420 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
-		50B3D6151FDA31A100945420 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50B3D61F1FDA35FA00945420 /* LXAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXAlertView.m; sourceTree = "<group>"; };
 		50B3D6201FDA35FA00945420 /* LXAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXAlertView.h; sourceTree = "<group>"; };
 		50B3D6221FDA35FA00945420 /* LXEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXEmptyView.m; sourceTree = "<group>"; };
@@ -189,6 +196,33 @@
 			path = NetworkError;
 			sourceTree = "<group>";
 		};
+		1615A4A31FDF6D2F00AC5780 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				1615A4A41FDF6D2F00AC5780 /* LXProgressHUD.h */,
+				1615A4A51FDF6D2F00AC5780 /* LXProgressHUD.m */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
+		1615A4BE1FDF7C9D00AC5780 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				1615A4BF1FDF7C9D00AC5780 /* Reachability.h */,
+				1615A4C01FDF7C9D00AC5780 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		1615A4CA1FDF7FEB00AC5780 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1615A4CB1FDF7FEB00AC5780 /* PublicTools.h */,
+				1615A4CC1FDF7FEB00AC5780 /* PublicTools.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		50B3D5A71FDA292800945420 = {
 			isa = PBXGroup;
 			children = (
@@ -249,11 +283,11 @@
 				50B3D6311FDA373D00945420 /* Library */,
 				50B3D6191FDA348F00945420 /* Components */,
 				50B3D6171FDA32A900945420 /* Other */,
-				50B3D6141FDA314900945420 /* Resources */,
 				50B3D6131FDA305D00945420 /* Services */,
 				50B3D60F1FDA2FB200945420 /* Macros */,
 				50B3D5FF1FDA2F4F00945420 /* Extension */,
 				50B3D5E81FDA2E0D00945420 /* BaseController */,
+				1615A4CA1FDF7FEB00AC5780 /* Utils */,
 			);
 			path = Publish;
 			sourceTree = "<group>";
@@ -304,14 +338,6 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		50B3D6141FDA314900945420 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				50B3D6151FDA31A100945420 /* Assets.xcassets */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		50B3D6171FDA32A900945420 /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +350,7 @@
 		50B3D6191FDA348F00945420 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1615A4A31FDF6D2F00AC5780 /* HUD */,
 				1615A2DB1FDE36EF00AC5780 /* NetworkError */,
 				50B3D61E1FDA35FA00945420 /* Alert */,
 				50B3D6211FDA35FA00945420 /* Empty */,
@@ -352,6 +379,7 @@
 		50B3D6311FDA373D00945420 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				1615A4BE1FDF7C9D00AC5780 /* Reachability */,
 				50B3D6771FDA373D00945420 /* Masonry */,
 				50B3D6921FDA373D00945420 /* AFNetworking */,
 				50B3D6A01FDA373D00945420 /* MBProgressHUD */,
@@ -537,7 +565,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				50B3D5C01FDA292800945420 /* LaunchScreen.storyboard in Resources */,
-				50B3D6161FDA31A200945420 /* Assets.xcassets in Resources */,
 				50B3D6CB1FDA373D00945420 /* Info.plist in Resources */,
 				50B3D5BB1FDA292800945420 /* Main.storyboard in Resources */,
 			);
@@ -580,10 +607,13 @@
 				50B3D62D1FDA35FA00945420 /* LXEmptyView.m in Sources */,
 				50B3D6D61FDA6C2100945420 /* NetworkTool.m in Sources */,
 				50B3D6CF1FDA373D00945420 /* AFURLRequestSerialization.m in Sources */,
+				1615A4C11FDF7C9D00AC5780 /* Reachability.m in Sources */,
 				50B3D62C1FDA35FA00945420 /* LXAlertView.m in Sources */,
 				50B3D5B81FDA292800945420 /* ViewController.m in Sources */,
 				50B3D6C51FDA373D00945420 /* MASLayoutConstraint.m in Sources */,
+				1615A4CD1FDF7FEB00AC5780 /* PublicTools.m in Sources */,
 				50B3D60B1FDA2F4F00945420 /* NSObject+Log.m in Sources */,
+				1615A4A61FDF6D2F00AC5780 /* LXProgressHUD.m in Sources */,
 				1615A2E01FDE36EF00AC5780 /* LXNetworkErrorView.m in Sources */,
 				50B3D5ED1FDA2EE100945420 /* BaseViewController.m in Sources */,
 				50B3D5C31FDA292800945420 /* main.m in Sources */,

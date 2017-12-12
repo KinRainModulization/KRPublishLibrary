@@ -7,14 +7,18 @@
 //
 
 #import "BaseViewController.h"
-#import "LXNetworkSolutionController.h"
-#import "LXNetworkErrorView.h"
 #import "Macros.h"
 #import "NetworkTool.h"
+#import "LXNetworkSolutionController.h"
+#import "LXNetworkErrorView.h"
+#import "LXEmptyView.h"
+
 
 @interface BaseViewController ()
-
+// 网络错误
 @property (nonatomic, strong) LXNetworkErrorView *networkErrorView;
+// 空状态
+@property (nonatomic, strong) LXEmptyView *emptyView;
 
 @end
 
@@ -40,6 +44,11 @@
 - (void)loadData {
 }
 
+- (void)showEmptyViewWithImageSource:(NSString *)imageStr title:(NSString *)title subTitle:(NSString *)subTitle {
+    [self.view bringSubviewToFront:_emptyView];
+    [_emptyView showWithImageSource:imageStr title:title subTitle:subTitle];
+}
+
 #pragma mark - Setter/Getter
 
 - (void)setHiddenNetworkErrorView:(BOOL)hiddenNetworkErrorView {
@@ -60,6 +69,14 @@
         };
     }
     return _networkErrorView;
+}
+
+- (LXEmptyView *)emptyView {
+    if (!_emptyView) {
+        _emptyView = [[LXEmptyView alloc] initWithFrame:self.view.bounds];
+        [self.view addSubview:_emptyView];
+    }
+    return _emptyView;
 }
 
 @end

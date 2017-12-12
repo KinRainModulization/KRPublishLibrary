@@ -3,15 +3,13 @@
 //  QuickBooks
 //
 //  Created by 希 on 16/7/12.
-//  Copyright © 2016年 shijiabao. All rights reserved.
+//  Copyright © 2016年 xi. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 @interface UIButton (Extension)
-/**
- *  自定义button
- */
+
 + (UIButton *)buttonWithTitle:(NSString *)title withFontSize:(CGFloat)size withTitleColor:(UIColor *)color withTarget:(id)target withAction:(SEL)action;
 /**
  *  文左图右按钮

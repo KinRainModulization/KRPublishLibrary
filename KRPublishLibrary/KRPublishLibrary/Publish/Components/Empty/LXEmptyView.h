@@ -10,9 +10,6 @@
 
 @interface LXEmptyView : UIView
 
-/**
- 显示空状态视图
- */
 - (void)showWithImageSource:(NSString *)imageStr title:(NSString *)title subTitle:(NSString *)subTitle;
 
 @end

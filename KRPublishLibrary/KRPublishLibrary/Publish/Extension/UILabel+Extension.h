@@ -9,9 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UILabel (Extension)
-/**
- *  自定义Label
- */
+
 + (instancetype)labelWithText:(NSString *)text textColor:(UIColor *)color fontSize:(CGFloat)fontSize;
 
 @end

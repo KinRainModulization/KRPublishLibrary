@@ -16,8 +16,6 @@
 @property (nonatomic, assign) CGFloat y;
 @property (nonatomic, assign) CGFloat centerX;
 @property (nonatomic, assign) CGFloat centerY;
-/**
- *  撤销键盘
- */
+
 - (void)dismissKeyboard;
 @end

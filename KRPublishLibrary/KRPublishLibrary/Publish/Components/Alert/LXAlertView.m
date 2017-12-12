@@ -11,9 +11,9 @@
 #import "Macros.h"
 #import "UILabel+Extension.h"
 
-const static CGFloat kAlertViewDefaultWidth          = 280; // 弹框宽度
-const static CGFloat kAlertViewDefaultButtonHeight   = 50;  // 按钮高度
-const static CGFloat kAlertViewCornerRadius          = 2;   // 圆角半径
+const static CGFloat kAlertViewDefaultWidth          = 280;
+const static CGFloat kAlertViewDefaultButtonHeight   = 50;
+const static CGFloat kAlertViewCornerRadius          = 2;
 
 @interface LXAlertView ()
 

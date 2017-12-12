@@ -8,6 +8,7 @@
 
 #import "NetworkTool.h"
 #import "AFNetworking.h"
+#import "PublicTools.h"
 #import "NSString+Extension.h"
 #import "Macros.h"
 
@@ -28,9 +29,9 @@ LXSingleton_m(NetworkTool)
     if (params) {
         [outputParams addEntriesFromDictionary:params];
     }
-//    if ([PublicTools getUserInfo]) {
-//        [outputParams addEntriesFromDictionary:[PublicTools getUserInfo]];
-//    }
+    if ([PublicTools getUserInfo]) {
+        [outputParams addEntriesFromDictionary:[PublicTools getUserInfo]];
+    }
     NSMutableDictionary *paramsToSign = [NSMutableDictionary dictionaryWithDictionary:outputParams];
     [paramsToSign setObject:SIGN_KEY forKey:@"app_key"];
     
@@ -48,7 +49,6 @@ LXSingleton_m(NetworkTool)
     return outputParams;
 }
 
-
 - (void)GET:(NSString *)URLString withParameters:(id)parameters success:(void (^)(NSURLSessionDataTask * task, id responseObject))success failure:(void (^)(NSURLSessionDataTask * task, NSError * error))failure {
     [self.afnManager GET:URLString parameters:parameters progress:nil success:success failure:failure];
 }
@@ -64,16 +64,6 @@ LXSingleton_m(NetworkTool)
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         MLog(@"error=%@",error);
     }];
-}
-
-+ (BOOL)checkNetwork {
-    AFNetworkReachabilityManager *networkManager = [AFNetworkReachabilityManager sharedManager];
-    return networkManager.reachable;
-}
-
-+ (void)networkStateChange {
-    AFNetworkReachabilityManager *networkManager = [AFNetworkReachabilityManager sharedManager];
-    [networkManager startMonitoring];
 }
 
 #pragma mark - Setter/Getter

@@ -12,10 +12,6 @@
 @interface NetworkTool : NSObject
 LXSingleton_h(NetworkTool);
 
-+ (BOOL)checkNetwork;
-
-+ (void)networkStateChange;
-
 - (void)GET:(NSString *)URLString withParameters:(id)parameters success:(void (^)(NSURLSessionDataTask * task, id responseObject))success failure:(void (^)(NSURLSessionDataTask * task, NSError * error))failure;
 
 - (void)POST:(NSString *)URLString parameters:(id)parameters success:(void (^)(id data))success failure:(void (^)(NSError * error))failure;

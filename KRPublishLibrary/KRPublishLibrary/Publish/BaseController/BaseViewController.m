@@ -9,6 +9,7 @@
 #import "BaseViewController.h"
 #import "Macros.h"
 #import "NetworkTool.h"
+#import "PublicTools.h"
 #import "LXNetworkSolutionController.h"
 #import "LXNetworkErrorView.h"
 #import "LXEmptyView.h"
@@ -31,7 +32,7 @@
     [self.view addSubview:self.networkErrorView];
     
     dispatch_async(dispatch_get_main_queue(), ^{
-        if (![NetworkTool checkNetwork]) {
+        if (![PublicTools checkNetwork]) {
             [self.view bringSubviewToFront:_networkErrorView];
             self.networkErrorView.hidden = NO;
         }

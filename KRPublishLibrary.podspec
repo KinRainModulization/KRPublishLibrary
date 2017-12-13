@@ -1,12 +1,13 @@
 Pod::Spec.new do |s|
 s.name         = "KRPublishLibrary"
-s.version      = "0.0.3"
+s.version      = "0.0.4"
 s.summary      = "KRPublishLibrary"
 s.description  = <<-DESC
                     KRPublishLibrary.podspec
                     DESC
 
 s.homepage     = "https://github.com/KinRainModulization/KRPublishLibrary.git"
+s.prefix_header_file = "KRPublishLibrary/KRPublishLibrary/PrefixHeader.pch"
 # s.screenshots  = "www.example.com/screenshots_1.gif"
 s.license      = "MIT"                #开源协议
 s.author             = { "linyi31" => "linyi@jd.com" }

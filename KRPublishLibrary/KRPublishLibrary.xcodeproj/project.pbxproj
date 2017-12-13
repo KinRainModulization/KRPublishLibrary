@@ -78,6 +78,7 @@
 		1615A4C01FDF7C9D00AC5780 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		1615A4CB1FDF7FEB00AC5780 /* PublicTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicTools.h; sourceTree = "<group>"; };
 		1615A4CC1FDF7FEB00AC5780 /* PublicTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicTools.m; sourceTree = "<group>"; };
+		1615A51C1FE0D9CB00AC5780 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		50B3D5B01FDA292800945420 /* KRPublishLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KRPublishLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B3D5B31FDA292800945420 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		50B3D5B41FDA292800945420 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -249,6 +250,7 @@
 				50B3D5E51FDA29AF00945420 /* Publish */,
 				50B3D5B31FDA292800945420 /* AppDelegate.h */,
 				50B3D5B41FDA292800945420 /* AppDelegate.m */,
+				1615A51C1FE0D9CB00AC5780 /* PrefixHeader.pch */,
 				50B3D5B61FDA292800945420 /* ViewController.h */,
 				50B3D5B71FDA292800945420 /* ViewController.m */,
 				50B3D5B91FDA292800945420 /* Main.storyboard */,

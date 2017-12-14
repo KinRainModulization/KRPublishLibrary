@@ -12,6 +12,8 @@
 		1615A4A61FDF6D2F00AC5780 /* LXProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1615A4A51FDF6D2F00AC5780 /* LXProgressHUD.m */; };
 		1615A4C11FDF7C9D00AC5780 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1615A4C01FDF7C9D00AC5780 /* Reachability.m */; };
 		1615A4CD1FDF7FEB00AC5780 /* PublicTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1615A4CC1FDF7FEB00AC5780 /* PublicTools.m */; };
+		16AD4CAB1FE2203F007F409F /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AD4CA81FE2203E007F409F /* UIBarButtonItem+Extension.m */; };
+		16AD4CAC1FE2203F007F409F /* UITextField+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AD4CAA1FE2203F007F409F /* UITextField+Extension.m */; };
 		50B3D5B51FDA292800945420 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B3D5B41FDA292800945420 /* AppDelegate.m */; };
 		50B3D5B81FDA292800945420 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B3D5B71FDA292800945420 /* ViewController.m */; };
 		50B3D5BB1FDA292800945420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B3D5B91FDA292800945420 /* Main.storyboard */; };
@@ -79,6 +81,10 @@
 		1615A4CB1FDF7FEB00AC5780 /* PublicTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicTools.h; sourceTree = "<group>"; };
 		1615A4CC1FDF7FEB00AC5780 /* PublicTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicTools.m; sourceTree = "<group>"; };
 		1615A51C1FE0D9CB00AC5780 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		16AD4CA71FE2203D007F409F /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		16AD4CA81FE2203E007F409F /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		16AD4CA91FE2203E007F409F /* UITextField+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Extension.h"; sourceTree = "<group>"; };
+		16AD4CAA1FE2203F007F409F /* UITextField+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Extension.m"; sourceTree = "<group>"; };
 		50B3D5B01FDA292800945420 /* KRPublishLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KRPublishLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B3D5B31FDA292800945420 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		50B3D5B41FDA292800945420 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -308,6 +314,10 @@
 		50B3D5FF1FDA2F4F00945420 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				16AD4CA71FE2203D007F409F /* UIBarButtonItem+Extension.h */,
+				16AD4CA81FE2203E007F409F /* UIBarButtonItem+Extension.m */,
+				16AD4CA91FE2203E007F409F /* UITextField+Extension.h */,
+				16AD4CAA1FE2203F007F409F /* UITextField+Extension.m */,
 				50B3D6001FDA2F4F00945420 /* NSString+Extension.h */,
 				50B3D6061FDA2F4F00945420 /* NSString+Extension.m */,
 				50B3D6051FDA2F4F00945420 /* UILabel+Extension.h */,
@@ -596,6 +606,7 @@
 				50B3D6D01FDA373D00945420 /* AFNetworkReachabilityManager.m in Sources */,
 				50B3D60E1FDA2F4F00945420 /* UIView+Extension.m in Sources */,
 				50B3D6CC1FDA373D00945420 /* AFURLResponseSerialization.m in Sources */,
+				16AD4CAC1FE2203F007F409F /* UITextField+Extension.m in Sources */,
 				50B3D60A1FDA2F4F00945420 /* UILabel+Extension.m in Sources */,
 				50B3D6C71FDA373D00945420 /* View+MASAdditions.m in Sources */,
 				50B3D6D21FDA373D00945420 /* MBProgressHUD.m in Sources */,
@@ -617,6 +628,7 @@
 				50B3D60B1FDA2F4F00945420 /* NSObject+Log.m in Sources */,
 				1615A4A61FDF6D2F00AC5780 /* LXProgressHUD.m in Sources */,
 				1615A2E01FDE36EF00AC5780 /* LXNetworkErrorView.m in Sources */,
+				16AD4CAB1FE2203F007F409F /* UIBarButtonItem+Extension.m in Sources */,
 				50B3D5ED1FDA2EE100945420 /* BaseViewController.m in Sources */,
 				50B3D5C31FDA292800945420 /* main.m in Sources */,
 				50B3D5B51FDA292800945420 /* AppDelegate.m in Sources */,

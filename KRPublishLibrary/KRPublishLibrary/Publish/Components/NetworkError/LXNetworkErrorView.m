@@ -106,14 +106,14 @@
 
 - (UIButton *)checkNetworkBtn {
     if (!_checkNetworkBtn) {
-        _checkNetworkBtn = [UIButton buttonWithTitle:@"查看解决方案>" withFontSize:16 withTitleColor:[UIColor blueColor] withTarget:self withAction:@selector(checkNetworkButtonClick)];
+        _checkNetworkBtn = [UIButton buttonWithTitle:@"查看解决方案>" fontSize:16 titleColor:[UIColor blueColor] target:self action:@selector(checkNetworkButtonClick)];
     }
     return _checkNetworkBtn;
 }
 
 - (UIButton *)reloadBtn {
     if (!_reloadBtn) {
-        _reloadBtn = [UIButton buttonWithTitle:@"重新加载" withFontSize:15 withTitleColor:UIColorFromHex(0x666666) withTarget:self withAction:@selector(reloadButtonClick)];
+        _reloadBtn = [UIButton buttonWithTitle:@"重新加载" fontSize:15 titleColor:UIColorFromHex(0x666666) target:self action:@selector(reloadButtonClick)];
         _reloadBtn.backgroundColor = UIColorFromHex(0xf0f0f0);
         _reloadBtn.layer.borderColor = UIColorFromHex(0xe2e2e2).CGColor;
         _reloadBtn.layer.borderWidth = 0.5;

@@ -9,10 +9,8 @@
 #import "UIButton+Extension.h"
 
 @implementation UIButton (Extension)
-/**
- *  自定义button
- */
-+ (UIButton *)buttonWithTitle:(NSString *)title withFontSize:(CGFloat)size withTitleColor:(UIColor *)color withTarget:(id)target withAction:(SEL)action {
+
++ (UIButton *)buttonWithTitle:(NSString *)title fontSize:(CGFloat)size titleColor:(UIColor *)color target:(id)target action:(SEL)action {
     UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setTitle:title forState:UIControlStateNormal];
     button.titleLabel.font = [UIFont systemFontOfSize:size];
@@ -21,14 +19,9 @@
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
-/**
- *  文左图右按钮
- *
- *  @param imageName 图片
- *  @param spacing   图片与文字间距
- */
-+ (UIButton *)buttonWithImage:(NSString *)imageName withSpacing:(CGFloat)spacing withTitle:(NSString *)title withFontSize:(CGFloat)size withTitleColor:(UIColor *)color withTarget:(id)target withAction:(SEL)action {
-    UIButton *button = [self buttonWithTitle:title withFontSize:size withTitleColor:color withTarget:target withAction:action];
+
++ (UIButton *)buttonWithImage:(NSString *)imageName spacing:(CGFloat)spacing title:(NSString *)title fontSize:(CGFloat)size titleColor:(UIColor *)color target:(id)target action:(SEL)action {
+    UIButton *button = [self buttonWithTitle:title fontSize:size titleColor:color target:target action:action];
     [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
 //    [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateHighlighted];
     [button sizeToFit];
@@ -39,21 +32,17 @@
 
     return button;
 }
-/**
- *  圆角按钮
- */
-+ (UIButton *)buttonWithCornerRadius:(CGFloat)cornerRadius withTitle:(NSString *)title withFontSize:(CGFloat)size withTitleColor:(UIColor *)color withBackgroundColor:(UIColor *)bgColor withTarget:(id)target withAction:(SEL)action {
-    UIButton * button = [self buttonWithTitle:title withFontSize:size withTitleColor:color withTarget:target withAction:action];
+
++ (UIButton *)buttonWithCornerRadius:(CGFloat)cornerRadius title:(NSString *)title fontSize:(CGFloat)size titleColor:(UIColor *)color backgroundColor:(UIColor *)bgColor target:(id)target action:(SEL)action {
+    UIButton * button = [self buttonWithTitle:title fontSize:size titleColor:color target:target action:action];
     button.layer.cornerRadius = cornerRadius;
     button.layer.masksToBounds = YES;
     [button setBackgroundColor:bgColor];
     return button;
 }
-/**
- *  圆角边框按钮
- */
-+ (UIButton *)buttonWithCornerRadius:(CGFloat)cornerRadius withBorderColor:(UIColor *)borderColor withTitle:(NSString *)title withFontSize:(CGFloat)size withTitleColor:(UIColor *)color withBackgroundColor:(UIColor *)bgColor withTarget:(id)target withAction:(SEL)action {
-    UIButton * button = [self buttonWithCornerRadius:cornerRadius withTitle:title withFontSize:size withTitleColor:color withBackgroundColor:bgColor withTarget:target withAction:action];
+
++ (UIButton *)buttonWithCornerRadius:(CGFloat)cornerRadius borderColor:(UIColor *)borderColor title:(NSString *)title fontSize:(CGFloat)size titleColor:(UIColor *)color backgroundColor:(UIColor *)bgColor target:(id)target action:(SEL)action {
+    UIButton * button = [self buttonWithCornerRadius:cornerRadius title:title fontSize:size titleColor:color backgroundColor:bgColor target:target action:action];
     button.layer.borderWidth = 1;
     button.layer.borderColor = borderColor.CGColor;
     return button;

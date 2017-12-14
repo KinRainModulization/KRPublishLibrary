@@ -19,6 +19,8 @@
 #import <KRPublishLibrary/UIView+Extension.h>
 #import <KRPublishLibrary/UILabel+Extension.h>
 #import <KRPublishLibrary/UIButton+Extension.h>
+#import <KRPublishLibrary/UIBarButtonItem+Extension.h>
+#import <KRPublishLibrary/UITextField+Extension.h>
 #import <KRPublishLibrary/NSObject+Log.h>
 
 #endif

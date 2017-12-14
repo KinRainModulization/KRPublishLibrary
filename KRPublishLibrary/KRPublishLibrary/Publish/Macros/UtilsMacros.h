@@ -66,5 +66,9 @@
 #define SCREEN_HEIGHT         [[UIScreen mainScreen] bounds].size.height
 // 屏幕宽度
 #define SCREEN_WIDTH          [[UIScreen mainScreen] bounds].size.width
+// 状态栏高度
+#define STATUS_BAR_HEIGHT [[UIApplication sharedApplication] statusBarFrame].size.height
+// 导航航高度
+#define NAV_BAR_HEIGHT (STATUS_BAR_HEIGHT + 44)
 
 #endif /* UtilsMacros_h */

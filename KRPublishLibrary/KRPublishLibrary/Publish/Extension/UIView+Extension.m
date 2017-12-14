@@ -93,9 +93,6 @@
     return self.frame.origin.y;
 }
 
-/**
- *  撤销键盘
- */
 - (void)dismissKeyboard {
     if (![self isExclusiveTouch]) {
         [self endEditing:YES];

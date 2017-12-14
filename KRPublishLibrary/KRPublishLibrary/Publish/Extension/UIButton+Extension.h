@@ -1,6 +1,6 @@
 //
 //  UIButton+Extension.h
-//  QuickBooks
+//  Extension
 //
 //  Created by 希 on 16/7/12.
 //  Copyright © 2016年 xi. All rights reserved.
@@ -10,20 +10,17 @@
 
 @interface UIButton (Extension)
 
-+ (UIButton *)buttonWithTitle:(NSString *)title withFontSize:(CGFloat)size withTitleColor:(UIColor *)color withTarget:(id)target withAction:(SEL)action;
++ (UIButton *)buttonWithTitle:(NSString *)title fontSize:(CGFloat)size titleColor:(UIColor *)color target:(id)target action:(SEL)action;
 /**
- *  文左图右按钮
- *
- *  @param imageName 图片
- *  @param spacing   图片与文字间距
+ *  文左图右
  */
-+ (UIButton *)buttonWithImage:(NSString *)imageName withSpacing:(CGFloat)spacing withTitle:(NSString *)title withFontSize:(CGFloat)size withTitleColor:(UIColor *)color withTarget:(id)target withAction:(SEL)action;
++ (UIButton *)buttonWithImage:(NSString *)imageName spacing:(CGFloat)spacing title:(NSString *)title fontSize:(CGFloat)size titleColor:(UIColor *)color target:(id)target action:(SEL)action;
 /**
- *  圆角按钮
+ *  圆角
  */
-+ (UIButton *)buttonWithCornerRadius:(CGFloat)cornerRadius withTitle:(NSString *)title withFontSize:(CGFloat)size withTitleColor:(UIColor *)color withBackgroundColor:(UIColor *)bgColor withTarget:(id)target withAction:(SEL)action;
++ (UIButton *)buttonWithCornerRadius:(CGFloat)cornerRadius title:(NSString *)title fontSize:(CGFloat)size titleColor:(UIColor *)color backgroundColor:(UIColor *)bgColor target:(id)target action:(SEL)action;
 /**
- *  圆角边框按钮
+ *  圆角边框
  */
-+ (UIButton *)buttonWithCornerRadius:(CGFloat)cornerRadius withBorderColor:(UIColor *)borderColor withTitle:(NSString *)title withFontSize:(CGFloat)size withTitleColor:(UIColor *)color withBackgroundColor:(UIColor *)bgColor withTarget:(id)target withAction:(SEL)action;
++ (UIButton *)buttonWithCornerRadius:(CGFloat)cornerRadius borderColor:(UIColor *)borderColor title:(NSString *)title fontSize:(CGFloat)size titleColor:(UIColor *)color backgroundColor:(UIColor *)bgColor target:(id)target action:(SEL)action;
 @end

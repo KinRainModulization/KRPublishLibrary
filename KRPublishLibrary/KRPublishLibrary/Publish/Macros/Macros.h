@@ -19,4 +19,10 @@
 
 #define GRAY_LINE_COLOR RGB(245,245,245)
 
+#define FONT_COLOR_999 RGB(153,153,153)
+#define FONT_COLOR_666 RGB(102,102,102)
+#define FONT_COLOR_333 RGB(51,51,51)
+
+
+
 #endif /* Macros_h */

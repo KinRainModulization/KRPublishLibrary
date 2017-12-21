@@ -47,6 +47,9 @@
 
 #define IsNilOrNull(_ref)   (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]))
 
+// weakSelf
+#define WEAK_SELF __weak typeof(self) weakSelf = self;
+
 //角度转弧度
 #define DEGREES_TO_RADIANS(d) (d * M_PI / 180)
 

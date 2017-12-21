@@ -76,7 +76,6 @@
 		1615A2DD1FDE36EF00AC5780 /* LXNetworkErrorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXNetworkErrorView.m; sourceTree = "<group>"; };
 		1615A2DE1FDE36EF00AC5780 /* LXNetworkSolutionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXNetworkSolutionController.h; sourceTree = "<group>"; };
 		1615A2DF1FDE36EF00AC5780 /* LXNetworkSolutionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXNetworkSolutionController.m; sourceTree = "<group>"; };
-		1615A2E31FDE61EE00AC5780 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		1615A4A41FDF6D2F00AC5780 /* LXProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXProgressHUD.h; sourceTree = "<group>"; };
 		1615A4A51FDF6D2F00AC5780 /* LXProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXProgressHUD.m; sourceTree = "<group>"; };
 		1615A4BF1FDF7C9D00AC5780 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
@@ -382,7 +381,6 @@
 		50B3D6171FDA32A900945420 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				1615A2E31FDE61EE00AC5780 /* PrefixHeader.pch */,
 				50B3D6D71FDA6D0A00945420 /* LXSingleton.h */,
 			);
 			path = Other;

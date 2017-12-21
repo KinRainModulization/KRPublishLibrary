@@ -7,6 +7,10 @@
 //
 
 #import "KRArrowIconRowView.h"
+#import "Masonry.h"
+#import "Macros.h"
+#import "UILabel+Extension.h"
+#import "UIView+Extension.h"
 
 @interface KRArrowIconRowView()
 
@@ -97,7 +101,6 @@
 
 - (void)setSubIconView:(UIView *)subIconView {
     _subIconView = subIconView;
-    MLog(@"%@",NSStringFromCGRect(subIconView.frame));
     [self.contentView addSubview:subIconView];
     [subIconView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.trailing.equalTo(_contentView).offset(self.hiddenArrow ? 0 : -28);

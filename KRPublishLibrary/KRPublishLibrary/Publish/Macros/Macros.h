@@ -11,6 +11,7 @@
 
 #import "UtilsMacros.h"
 #import "APIStringMacros.h"
+#import "NotificationMacros.h"
 
 #define SIGN_KEY @"ebd696f30f9f53ea721ef714ab99b1ba"
 

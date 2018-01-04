@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "KRPublishLibrary"
-s.version      = "0.0.8"
+s.version      = "0.0.9"
 s.summary      = "KRPublishLibrary"
 s.description  = <<-DESC
                     KRPublishLibrary.podspec

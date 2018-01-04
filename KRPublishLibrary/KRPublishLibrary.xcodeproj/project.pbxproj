@@ -15,6 +15,9 @@
 		167804731FEB5EE4005BAA91 /* KRArrowIconRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 167804711FEB5EE3005BAA91 /* KRArrowIconRowView.m */; };
 		167804801FEB5F1B005BAA91 /* LXCustomPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1678047D1FEB5F1B005BAA91 /* LXCustomPickerView.m */; };
 		167804811FEB5F1B005BAA91 /* LXDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1678047F1FEB5F1B005BAA91 /* LXDatePickerView.m */; };
+		1683E8E21FFE238B00D97BE9 /* EllipsePageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1683E8DC1FFE238B00D97BE9 /* EllipsePageControl.m */; };
+		1683E8E31FFE238B00D97BE9 /* NewPagedFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1683E8DF1FFE238B00D97BE9 /* NewPagedFlowView.m */; };
+		1683E8E41FFE238B00D97BE9 /* PGIndexBannerSubiew.m in Sources */ = {isa = PBXBuildFile; fileRef = 1683E8E11FFE238B00D97BE9 /* PGIndexBannerSubiew.m */; };
 		16AD4CAB1FE2203F007F409F /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AD4CA81FE2203E007F409F /* UIBarButtonItem+Extension.m */; };
 		16AD4CAC1FE2203F007F409F /* UITextField+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AD4CAA1FE2203F007F409F /* UITextField+Extension.m */; };
 		50B3D5B51FDA292800945420 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B3D5B41FDA292800945420 /* AppDelegate.m */; };
@@ -89,6 +92,13 @@
 		1678047D1FEB5F1B005BAA91 /* LXCustomPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXCustomPickerView.m; sourceTree = "<group>"; };
 		1678047E1FEB5F1B005BAA91 /* LXDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDatePickerView.h; sourceTree = "<group>"; };
 		1678047F1FEB5F1B005BAA91 /* LXDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDatePickerView.m; sourceTree = "<group>"; };
+		1683E8DB1FFE238B00D97BE9 /* EllipsePageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EllipsePageControl.h; sourceTree = "<group>"; };
+		1683E8DC1FFE238B00D97BE9 /* EllipsePageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EllipsePageControl.m; sourceTree = "<group>"; };
+		1683E8DE1FFE238B00D97BE9 /* NewPagedFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPagedFlowView.h; sourceTree = "<group>"; };
+		1683E8DF1FFE238B00D97BE9 /* NewPagedFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPagedFlowView.m; sourceTree = "<group>"; };
+		1683E8E01FFE238B00D97BE9 /* PGIndexBannerSubiew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGIndexBannerSubiew.h; sourceTree = "<group>"; };
+		1683E8E11FFE238B00D97BE9 /* PGIndexBannerSubiew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGIndexBannerSubiew.m; sourceTree = "<group>"; };
+		1683E8E51FFE247B00D97BE9 /* NotificationMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationMacros.h; sourceTree = "<group>"; };
 		16AD4CA71FE2203D007F409F /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		16AD4CA81FE2203E007F409F /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		16AD4CA91FE2203E007F409F /* UITextField+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Extension.h"; sourceTree = "<group>"; };
@@ -258,6 +268,35 @@
 			path = PickerView;
 			sourceTree = "<group>";
 		};
+		1683E8D91FFE238B00D97BE9 /* CycleScroll */ = {
+			isa = PBXGroup;
+			children = (
+				1683E8DA1FFE238B00D97BE9 /* EllipsePageControl */,
+				1683E8DD1FFE238B00D97BE9 /* NewPagedFlowView */,
+			);
+			path = CycleScroll;
+			sourceTree = "<group>";
+		};
+		1683E8DA1FFE238B00D97BE9 /* EllipsePageControl */ = {
+			isa = PBXGroup;
+			children = (
+				1683E8DB1FFE238B00D97BE9 /* EllipsePageControl.h */,
+				1683E8DC1FFE238B00D97BE9 /* EllipsePageControl.m */,
+			);
+			path = EllipsePageControl;
+			sourceTree = "<group>";
+		};
+		1683E8DD1FFE238B00D97BE9 /* NewPagedFlowView */ = {
+			isa = PBXGroup;
+			children = (
+				1683E8DE1FFE238B00D97BE9 /* NewPagedFlowView.h */,
+				1683E8DF1FFE238B00D97BE9 /* NewPagedFlowView.m */,
+				1683E8E01FFE238B00D97BE9 /* PGIndexBannerSubiew.h */,
+				1683E8E11FFE238B00D97BE9 /* PGIndexBannerSubiew.m */,
+			);
+			path = NewPagedFlowView;
+			sourceTree = "<group>";
+		};
 		50B3D5A71FDA292800945420 = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +404,7 @@
 			children = (
 				50B3D6101FDA2FB200945420 /* UtilsMacros.h */,
 				50B3D6111FDA2FB200945420 /* APIStringMacros.h */,
+				1683E8E51FFE247B00D97BE9 /* NotificationMacros.h */,
 				50B3D6121FDA2FB200945420 /* Macros.h */,
 			);
 			path = Macros;
@@ -389,6 +429,7 @@
 		50B3D6191FDA348F00945420 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1683E8D91FFE238B00D97BE9 /* CycleScroll */,
 				1678047B1FEB5F1B005BAA91 /* PickerView */,
 				1633BCB81FE8F6EA00A26D9C /* Cells */,
 				1615A4A31FDF6D2F00AC5780 /* HUD */,
@@ -648,6 +689,7 @@
 				50B3D6D11FDA373D00945420 /* AFSecurityPolicy.m in Sources */,
 				50B3D6C61FDA373D00945420 /* NSArray+MASAdditions.m in Sources */,
 				1615A2E11FDE36EF00AC5780 /* LXNetworkSolutionController.m in Sources */,
+				1683E8E21FFE238B00D97BE9 /* EllipsePageControl.m in Sources */,
 				50B3D62D1FDA35FA00945420 /* LXEmptyView.m in Sources */,
 				50B3D6D61FDA6C2100945420 /* NetworkTool.m in Sources */,
 				50B3D6CF1FDA373D00945420 /* AFURLRequestSerialization.m in Sources */,
@@ -656,7 +698,9 @@
 				50B3D5B81FDA292800945420 /* ViewController.m in Sources */,
 				50B3D6C51FDA373D00945420 /* MASLayoutConstraint.m in Sources */,
 				1615A4CD1FDF7FEB00AC5780 /* PublicTools.m in Sources */,
+				1683E8E31FFE238B00D97BE9 /* NewPagedFlowView.m in Sources */,
 				50B3D60B1FDA2F4F00945420 /* NSObject+Log.m in Sources */,
+				1683E8E41FFE238B00D97BE9 /* PGIndexBannerSubiew.m in Sources */,
 				1615A4A61FDF6D2F00AC5780 /* LXProgressHUD.m in Sources */,
 				1615A2E01FDE36EF00AC5780 /* LXNetworkErrorView.m in Sources */,
 				16AD4CAB1FE2203F007F409F /* UIBarButtonItem+Extension.m in Sources */,

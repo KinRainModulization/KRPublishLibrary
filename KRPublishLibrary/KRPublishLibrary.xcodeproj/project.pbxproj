@@ -15,6 +15,7 @@
 		167804731FEB5EE4005BAA91 /* KRArrowIconRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 167804711FEB5EE3005BAA91 /* KRArrowIconRowView.m */; };
 		167804801FEB5F1B005BAA91 /* LXCustomPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1678047D1FEB5F1B005BAA91 /* LXCustomPickerView.m */; };
 		167804811FEB5F1B005BAA91 /* LXDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1678047F1FEB5F1B005BAA91 /* LXDatePickerView.m */; };
+		167A6ED92005B39E00A47F74 /* KRCustomPriceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 167A6ED82005B39E00A47F74 /* KRCustomPriceView.m */; };
 		1683E8E21FFE238B00D97BE9 /* EllipsePageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1683E8DC1FFE238B00D97BE9 /* EllipsePageControl.m */; };
 		1683E8E31FFE238B00D97BE9 /* NewPagedFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1683E8DF1FFE238B00D97BE9 /* NewPagedFlowView.m */; };
 		1683E8E41FFE238B00D97BE9 /* PGIndexBannerSubiew.m in Sources */ = {isa = PBXBuildFile; fileRef = 1683E8E11FFE238B00D97BE9 /* PGIndexBannerSubiew.m */; };
@@ -92,6 +93,8 @@
 		1678047D1FEB5F1B005BAA91 /* LXCustomPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXCustomPickerView.m; sourceTree = "<group>"; };
 		1678047E1FEB5F1B005BAA91 /* LXDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDatePickerView.h; sourceTree = "<group>"; };
 		1678047F1FEB5F1B005BAA91 /* LXDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDatePickerView.m; sourceTree = "<group>"; };
+		167A6ED72005B39E00A47F74 /* KRCustomPriceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRCustomPriceView.h; sourceTree = "<group>"; };
+		167A6ED82005B39E00A47F74 /* KRCustomPriceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRCustomPriceView.m; sourceTree = "<group>"; };
 		1683E8DB1FFE238B00D97BE9 /* EllipsePageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EllipsePageControl.h; sourceTree = "<group>"; };
 		1683E8DC1FFE238B00D97BE9 /* EllipsePageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EllipsePageControl.m; sourceTree = "<group>"; };
 		1683E8DE1FFE238B00D97BE9 /* NewPagedFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPagedFlowView.h; sourceTree = "<group>"; };
@@ -268,6 +271,15 @@
 			path = PickerView;
 			sourceTree = "<group>";
 		};
+		167A6ED62005B39E00A47F74 /* PriceView */ = {
+			isa = PBXGroup;
+			children = (
+				167A6ED72005B39E00A47F74 /* KRCustomPriceView.h */,
+				167A6ED82005B39E00A47F74 /* KRCustomPriceView.m */,
+			);
+			path = PriceView;
+			sourceTree = "<group>";
+		};
 		1683E8D91FFE238B00D97BE9 /* CycleScroll */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,6 +441,7 @@
 		50B3D6191FDA348F00945420 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				167A6ED62005B39E00A47F74 /* PriceView */,
 				1683E8D91FFE238B00D97BE9 /* CycleScroll */,
 				1678047B1FEB5F1B005BAA91 /* PickerView */,
 				1633BCB81FE8F6EA00A26D9C /* Cells */,
@@ -713,6 +726,7 @@
 				50B3D6CD1FDA373D00945420 /* AFHTTPSessionManager.m in Sources */,
 				50B3D6CE1FDA373D00945420 /* AFURLSessionManager.m in Sources */,
 				50B3D6C11FDA373D00945420 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				167A6ED92005B39E00A47F74 /* KRCustomPriceView.m in Sources */,
 				50B3D5EE1FDA2EE100945420 /* BaseNavigationController.m in Sources */,
 				50B3D60D1FDA2F4F00945420 /* UIButton+Extension.m in Sources */,
 				50B3D60C1FDA2F4F00945420 /* NSString+Extension.m in Sources */,

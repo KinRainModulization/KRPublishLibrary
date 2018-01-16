@@ -7,6 +7,9 @@
 //
 
 #import "KRCustomPriceView.h"
+#import "Macros.h"
+#import "UILabel+Extension.h"
+#import "UIView+Extension.h"
 
 @implementation KRCustomPriceView
 

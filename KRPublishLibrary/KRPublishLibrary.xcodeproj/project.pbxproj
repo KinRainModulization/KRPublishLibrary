@@ -12,6 +12,7 @@
 		1615A4A61FDF6D2F00AC5780 /* LXProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1615A4A51FDF6D2F00AC5780 /* LXProgressHUD.m */; };
 		1615A4C11FDF7C9D00AC5780 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1615A4C01FDF7C9D00AC5780 /* Reachability.m */; };
 		1615A4CD1FDF7FEB00AC5780 /* PublicTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1615A4CC1FDF7FEB00AC5780 /* PublicTools.m */; };
+		1632E793200DF892002588B0 /* KRProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1632E792200DF892002588B0 /* KRProductCell.m */; };
 		167804731FEB5EE4005BAA91 /* KRArrowIconRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 167804711FEB5EE3005BAA91 /* KRArrowIconRowView.m */; };
 		167804801FEB5F1B005BAA91 /* LXCustomPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1678047D1FEB5F1B005BAA91 /* LXCustomPickerView.m */; };
 		167804811FEB5F1B005BAA91 /* LXDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1678047F1FEB5F1B005BAA91 /* LXDatePickerView.m */; };
@@ -87,6 +88,8 @@
 		1615A4CB1FDF7FEB00AC5780 /* PublicTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicTools.h; sourceTree = "<group>"; };
 		1615A4CC1FDF7FEB00AC5780 /* PublicTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicTools.m; sourceTree = "<group>"; };
 		1615A51C1FE0D9CB00AC5780 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		1632E791200DF891002588B0 /* KRProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRProductCell.h; sourceTree = "<group>"; };
+		1632E792200DF892002588B0 /* KRProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRProductCell.m; sourceTree = "<group>"; };
 		167804711FEB5EE3005BAA91 /* KRArrowIconRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRArrowIconRowView.m; sourceTree = "<group>"; };
 		167804721FEB5EE4005BAA91 /* KRArrowIconRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRArrowIconRowView.h; sourceTree = "<group>"; };
 		1678047C1FEB5F1B005BAA91 /* LXCustomPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXCustomPickerView.h; sourceTree = "<group>"; };
@@ -254,6 +257,8 @@
 		1633BCB81FE8F6EA00A26D9C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				1632E791200DF891002588B0 /* KRProductCell.h */,
+				1632E792200DF892002588B0 /* KRProductCell.m */,
 				167804721FEB5EE4005BAA91 /* KRArrowIconRowView.h */,
 				167804711FEB5EE3005BAA91 /* KRArrowIconRowView.m */,
 			);
@@ -695,6 +700,7 @@
 				50B3D6C71FDA373D00945420 /* View+MASAdditions.m in Sources */,
 				50B3D6D21FDA373D00945420 /* MBProgressHUD.m in Sources */,
 				50B3D6C41FDA373D00945420 /* MASConstraintMaker.m in Sources */,
+				1632E793200DF892002588B0 /* KRProductCell.m in Sources */,
 				50B3D6C31FDA373D00945420 /* MASCompositeConstraint.m in Sources */,
 				167804731FEB5EE4005BAA91 /* KRArrowIconRowView.m in Sources */,
 				50B3D6C81FDA373D00945420 /* MASConstraint.m in Sources */,

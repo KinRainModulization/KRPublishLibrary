@@ -10,4 +10,7 @@
 
 @interface KRProductCell : UITableViewCell
 
+// default 5
+@property (nonatomic, assign) CGFloat cellLineHeight;
+
 @end

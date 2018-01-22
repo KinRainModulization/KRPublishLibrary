@@ -14,9 +14,10 @@
 @property (nonatomic, copy) NSString *subTitle;
 @property (nonatomic, copy) NSString *iconImgName;
 @property (nonatomic, weak) UIView *subIconView;
+@property (nonatomic, copy) void (^rowDidClickBlock)(void);
 
 + (instancetype)rowViewWithSize:(CGSize)size title:(NSString *)title subtitle:(NSString *)subTitle iconName:(NSString *)imgName hiddenArrow:(BOOL)isHidden;
 
-- (instancetype)initWithFrame:(CGRect)frame title:(NSString *)title subtitle:(NSString *)subTitle iconName:(NSString *)imgName hiddenArrow:(BOOL)isHidden;
++ (instancetype)rowViewWithTitle:(NSString *)title subtitle:(NSString *)subTitle iconName:(NSString *)imgName hiddenArrow:(BOOL)isHidden;
 
 @end

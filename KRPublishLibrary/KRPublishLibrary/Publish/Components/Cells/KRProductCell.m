@@ -22,6 +22,8 @@
 @property (nonatomic, strong) UILabel *productBriefLabel;
 
 @property (nonatomic, strong) KRCustomPriceView *priceView;
+
+@property (nonatomic, strong) UIView *lineView;
 @end
 
 @implementation KRProductCell
@@ -36,15 +38,12 @@
 - (void)prepareUI {
     UIView *contentView = [[UIView alloc] init];
     
-    UIView *lineView = [[UIView alloc] init];
-    lineView.backgroundColor = GLOBAL_BACKGROUND_COLOR;
-    
     [self addSubview:contentView];
     [contentView addSubview:self.productImageView];
     [contentView addSubview:self.productNameLabel];
     [contentView addSubview:self.productBriefLabel];
     [contentView addSubview:self.priceView];
-    [contentView addSubview:lineView];
+    [contentView addSubview:self.lineView];
     
     [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self).insets(UIEdgeInsetsMake(10, 11.5, 10, 10));
@@ -66,15 +65,18 @@
         make.trailing.equalTo(contentView).offset(-_priceView.width);
         make.bottom.equalTo(contentView).offset(-(20+_priceView.height*0.5));
     }];
-    [lineView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [_lineView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.trailing.bottom.equalTo(self);
         make.height.mas_equalTo(5);
     }];
 }
 
-//- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-//    [super setSelected:NO animated:animated];
-//}
+- (void)setCellLineHeight:(CGFloat)cellLineHeight {
+    _cellLineHeight = cellLineHeight;
+    [_lineView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(cellLineHeight);
+    }];
+}
 
 - (UIImageView *)productImageView {
     if (!_productImageView) {
@@ -106,4 +108,14 @@
     }
     return _priceView;
 }
+
+- (UIView *)lineView {
+    if (!_lineView) {
+        _lineView = [[UIView alloc] init];
+        _lineView.backgroundColor = GLOBAL_BACKGROUND_COLOR;
+    }
+    return _lineView;
+}
+
 @end
+
